@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avillarroelExamen.Views.resumen"
+             Title="Resumen">
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="20">
+        <Label
+       x:Name="lblUsuario"
+       TextColor="Blue"
+       FontSize="14"
+       HorizontalTextAlignment="End"/>
+        <Label 
+       Text="Resumen"
+       HorizontalTextAlignment="Center"
+       FontSize="22"
+       TextColor="Red"
+            />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label 
+                Text="Nombre:"
+                VerticalOptions="Center"
+                Grid.Row="0"
+                Grid.Column="0" />
+            <Label
+                x:Name="lblNombre"
+                FontSize="14"
+                Grid.Row="0" 
+                Grid.Column="1" />
+
+            <Label 
+                Text="Apellido:"
+                VerticalOptions="Center"
+                Grid.Row="1"
+                Grid.Column="0"/>
+            <Label
+                x:Name="lblApellido"
+                FontSize="14"
+                Grid.Row="1" 
+                Grid.Column="1"/>
+
+            <Label  
+                Text="Edad:"
+                VerticalOptions="Center"
+                Grid.Row="2"
+                Grid.Column="0"/>
+            <Label
+                x:Name="lblEdad"
+                FontSize="14"
+                Grid.Row="2" 
+                Grid.Column="1" />
+
+            <Label 
+                Text="Fecha:"
+                VerticalOptions="Center" 
+                Grid.Row="3"
+                Grid.Column="0" />
+            <Label
+                x:Name="lblFecha"
+                FontSize="14" 
+                Grid.Row="3" 
+                Grid.Column="1" />
+
+            <Label 
+                Text="Ciudad:"
+                VerticalOptions="Center"
+                Grid.Row="4"
+                Grid.Column="0"  />
+            <Label
+                x:Name="lblCiudad"
+                FontSize="14"
+                Grid.Row="4" 
+                Grid.Column="1" />
+
+            <Label 
+                Text="Pais:"
+                VerticalOptions="Center"
+                Grid.Row="5"
+                Grid.Column="0" />
+            <Label
+                x:Name="lblPais"
+                FontSize="14"
+                Grid.Row="5" 
+                Grid.Column="1" />
+
+            <Label 
+                Text="Monto Inicial:"
+                VerticalOptions="Center"
+                Grid.Row="6"
+                Grid.Column="0" />
+            <Label
+                x:Name="lblMontoInicial"
+                FontSize="14"
+                Grid.Row="6" 
+                Grid.Column="1" />
+
+            <Label 
+                Text="Pago Mensual:"
+                VerticalOptions="Center"
+                Grid.Row="7"
+                Grid.Column="0" />
+            <Label
+                x:Name="lblPagoMensual"
+                FontSize="14"
+                Grid.Row="7" 
+                Grid.Column="1" />
+
+            <Label 
+                Text="Pago Total:"
+                VerticalOptions="Center"
+                Grid.Row="8"
+                Grid.Column="0" />
+            <Label
+                x:Name="lblPagoTotal"
+                FontSize="14"
+                Grid.Row="8" 
+                Grid.Column="1" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

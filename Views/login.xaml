@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="avillarroelExamen.Views.login"
+             Title="Página principal">
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="20">
+        
+        <Label 
+            Text="Login"
+            HorizontalTextAlignment="Center"
+            FontSize="20"
+            TextColor="Red"/>
+        <Image Source="login.png" WidthRequest="100"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label
+                Text="Usuario"
+                FontSize="20"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Grid.Row="0"
+                Grid.Column="0"/>
+            <Entry
+                x:Name="txtUsuario"
+                Placeholder="Ingrese su usuario"
+                MaxLength="20"
+                Grid.Row="0"
+                Grid.Column="1"/>
+            
+            <Label
+                Text="Contraseña"
+                FontSize="20"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Grid.Row="1"
+                Grid.Column="0"/>
+            <Entry
+                x:Name="txtContrasena"
+                Placeholder="ingrese contraseña"
+                IsPassword="True"
+                Grid.Row="1"
+                Grid.Column="1"/>
+           
+        </Grid>
+        <Button
+            x:Name="btnIniciar"
+            Text="INICIAR SESIÓN"
+            Clicked="btnIniciar_Clicked"
+            HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>
